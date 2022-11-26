@@ -12,4 +12,8 @@ fn main() {
 
     let return_env: String = env.get_value(key).unwrap();
     println!("{:?} is set with the value: {:?}", key, return_env);
+    //only close window on user input
+    println!("Press enter to exit");
+    let mut line = String::new();
+    let _input = std::io::stdin().read_line(&mut line).expect("Failed to read line");
 }
