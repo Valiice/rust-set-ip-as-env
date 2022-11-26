@@ -15,7 +15,7 @@ fn main() {
     // assert_eq!(env::var(key), Ok(my_local_ip.to_string()));
     // println!("This is my local IP address: {:?}", my_local_ip);
     //get env variable using RegKey
-    let env = hkcu.open_subkey(key).unwrap();
-    println!("{:?}", env);
-    println!("The value {:?} on key: {:?}", env::var_os(key), key);
+    // let env = hkcu.open_subkey(key).unwrap();
+    // println!("{:?}", env);
+    // println!("The value {:?} on key: {:?}", env::var_os(key), key);
 }
